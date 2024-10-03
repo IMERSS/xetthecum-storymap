@@ -1,6 +1,7 @@
 library(whisker)
 library(tidyverse)
 library(readr)
+library(stringr)
 
 # Found existence of these variables at https://quarto.org/docs/projects/scripts.html#pre-and-post-render
 render_all <- nzchar(Sys.getenv("QUARTO_PROJECT_RENDER_ALL"))
@@ -58,16 +59,7 @@ if (render_all) {
   }
   
   make_audio <- function (row) {
-    fn <- row %>%
-      mutate(fn = gsub('\'', '_', hulquminumName),
-             fn = paste0(fn, '_Levi_Wilson_&_Emily_Menzies_Galiano_Island_2022-02-20.mp3')) %>%
-      pull(fn)
-    
-    if (file.exists(paste0('audio/', fn))){
-      return (paste0('`r embedr::embed_audio(\'../../audio/', fn, '\')`'))
-    } else {
-      return("")
-    }
+    return (str_glue('<audio controls>\n  <source src="../../{row$audioLink}" type="audio/mpeg">\n</audio>'))
   }
   
   make_community_plot <- function (row, parent, obs) {

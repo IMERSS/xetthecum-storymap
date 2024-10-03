@@ -18,7 +18,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: p'up'q'iyasulhp, p'up'q'iyas, t'ets'ulhp
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Symphoricarpos albus
 

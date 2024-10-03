@@ -17,7 +17,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: sqw'uqwtsus
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Vaccinium parvifolium
 

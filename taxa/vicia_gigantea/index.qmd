@@ -16,7 +16,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: tł’íkw’əәn’
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Vicia gigantea
 

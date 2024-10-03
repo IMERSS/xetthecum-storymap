@@ -20,7 +20,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: qw'aqwuqw
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Fucus distichus
 

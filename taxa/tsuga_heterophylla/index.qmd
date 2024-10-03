@@ -20,7 +20,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: thq'iinlhp
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Tsuga heterophylla
 

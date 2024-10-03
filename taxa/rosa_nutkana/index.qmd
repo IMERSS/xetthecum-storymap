@@ -18,7 +18,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: qel'qulhp
 
-
+<audio controls>
+  <source src="../../audio/qel_qulhp_Levi_Wilson_&_Emily_Menzies_Galiano_Island_2022-02-20.mp3" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Rosa nutkana
 

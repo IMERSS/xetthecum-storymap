@@ -21,7 +21,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: ha'put
 
-`r embedr::embed_audio('../../audio/ha_put_Levi_Wilson_&_Emily_Menzies_Galiano_Island_2022-02-20.mp3')`
+<audio controls>
+  <source src="../../audio/ha_put_Levi_Wilson_&_Emily_Menzies_Galiano_Island_2022-02-20_2.mp3" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Odocoileus hemionus columbianus
 

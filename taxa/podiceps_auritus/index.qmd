@@ -19,7 +19,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: shhw'un'ets
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Podiceps auritus
 

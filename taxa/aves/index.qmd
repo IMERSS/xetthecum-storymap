@@ -18,7 +18,9 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: tth'utth'uxals
 
-
+<audio controls>
+  <source src="../../NA" type="audio/mpeg">
+</audio>
 
 **Taxon Name**: Aves
 

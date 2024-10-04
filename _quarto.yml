@@ -52,6 +52,8 @@ website:
             href: cultural-values.qmd
           - text: Ecological Communities
             href: ecological-values.qmd
+          - text: Storymap Designs
+            href: storymap-designs.qmd
           #- text: Downloads
           #  href: data.qmd
       - href: resources.qmd

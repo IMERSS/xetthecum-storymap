@@ -151,6 +151,27 @@ p {
   padding: 0;
 }
 
+.storymap-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.storymap-tiles img {
+  width: 100%;
+}
+
+.storymap-tile {
+    padding: 1rem;
+    margin: 0.5rem;
+    background: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 350px;
+}
+
 .values-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

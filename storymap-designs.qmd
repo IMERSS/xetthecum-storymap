@@ -1,0 +1,36 @@
+---
+engine: knitr
+title: Research
+sidebar: false
+---
+
+## Storymap Designs
+
+Please explore the different versions of the storymap that we have explored over time and share your feedback with us!
+
+<div class="storymap-tiles">
+<div class="storymap-tile">
+ <a href="https://imerss.github.io/imerss-bioinfo/Xetthecum.html"><img src="files/phase-i-design.png"></a>
+ <div>Phase I Design Incorporating the Web of Life</div>
+</div>
+
+<div class="storymap-tile">
+ <a href="https://imerss.github.io/imerss-bioinfo/Pe%27pi%27ow%27elh.html"><img src="files/pe'pi'ow'elh-design.png"></a>
+ <div>Pe’pi’ow’elh’ Prototype (English Camp)</div>
+</div>
+
+<div class="storymap-tile">
+ <a href="https://imerss.github.io/xetthecum-storymap-scrolly-historical/Xetthecum-Storymap-Reknitted.html"><img src="files/first-scrollytelling-design.png"></a>
+ <div>First Version of “Scrollytelling” Storymap</div>
+</div>
+
+<div class="storymap-tile">
+ <a href="https://imerss.github.io/xetthecum-storymap-scrolly/Xetthecum-Storymap-Reknitted.html#"><img src="files/second-scrollytelling-design.png"></a>
+ <div>Second Version of “Scrollytelling” Storymap</div>
+</div>
+
+<div class="storymap-tile">
+ <a href="https://www.figma.com/proto/yXKyjRyHbnJPB6jrbfO0dq/Xetthecum?page-id=801%3A2&node-id=1348-298&node-type=frame&viewport=632%2C-189%2C0.21&t=nmiF14AOjWODhcLX-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1348%3A298&show-proto-sidebar=1"><img src="files/phase-ii-design.png"></a>
+ <div>Phase II Figma Design Prototype</div>
+</div>
+</div>

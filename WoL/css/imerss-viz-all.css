@@ -644,7 +644,7 @@ a.ui-button:active,
 	box-shadow: 0/*{offsetLeftShadow}*/ 0/*{offsetTopShadow}*/ 5px/*{thicknessShadow}*/ #666666/*{bgColorShadow}*/;
 }
 /*!
- * jQuery UI Tabs 1.13.1
+ * jQuery UI Tabs 1.13.2
  * http://jqueryui.com
  *
  * Copyright jQuery Foundation and other contributors
@@ -694,79 +694,728 @@ a.ui-button:active,
 	padding: 1em 1.4em;
 	background: none;
 }
-.autocomplete__wrapper{position:relative}.autocomplete__hint,.autocomplete__input{-webkit-appearance:none;border:2px solid #0b0c0c;border-radius:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;margin-bottom:0;width:100%}.autocomplete__input{background-color:transparent;position:relative}.autocomplete__hint{color:#b1b4b6;position:absolute}.autocomplete__input--default{padding:5px}.autocomplete__input--focused{outline:3px solid #fd0;outline-offset:0;box-shadow:inset 0 0 0 2px}.autocomplete__input--show-all-values{padding:5px 34px 5px 5px;cursor:pointer}.autocomplete__dropdown-arrow-down{z-index:-1;display:inline-block;position:absolute;right:8px;width:24px;height:24px;top:10px}.autocomplete__menu{background-color:#fff;border:2px solid #0b0c0c;border-top:0;color:#0b0c0c;margin:0;max-height:342px;overflow-x:hidden;padding:0;width:100%;width:calc(100% - 4px)}.autocomplete__menu--visible{display:block}.autocomplete__menu--hidden{display:none}.autocomplete__menu--overlay{box-shadow:rgba(0,0,0,.256863) 0 2px 6px;left:0;position:absolute;top:100%;z-index:100}.autocomplete__menu--inline{position:relative}.autocomplete__option{border-bottom:solid #b1b4b6;border-width:1px 0;cursor:pointer;display:block;position:relative}.autocomplete__option>*{pointer-events:none}.autocomplete__option:first-of-type{border-top-width:0}.autocomplete__option:last-of-type{border-bottom-width:0}.autocomplete__option--odd{background-color:#fafafa}.autocomplete__option--focused,.autocomplete__option:hover{background-color:#1d70b8;border-color:#1d70b8;color:#fff;outline:0}@media (-ms-high-contrast:active),(forced-colors:active){.autocomplete__menu{border-color:FieldText}.autocomplete__option{background-color:Field;color:FieldText}.autocomplete__option--focused,.autocomplete__option:hover{forced-color-adjust:none;background-color:SelectedItem;border-color:SelectedItem;color:SelectedItemText;outline-color:SelectedItemText}}.autocomplete__option--no-results{background-color:#fafafa;color:#646b6f;cursor:not-allowed}.autocomplete__hint,.autocomplete__input,.autocomplete__option{font-size:16px;line-height:1.25}.autocomplete__hint,.autocomplete__option{padding:5px}@media (min-width:641px){.autocomplete__hint,.autocomplete__input,.autocomplete__option{font-size:19px;line-height:1.31579}}:root {
+:root {
+    --imerss-scrollbar-width: 12px;
+}
+
+.imerss-container ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: var(--imerss-scrollbar-width);
+    background-color: #eee
+}
+
+.imerss-container ::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #C1C1C1;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.imerss-container ::-webkit-scrollbar-thumb:hover {
+    background-color: #A8A8A8;
+}
+
+#inline-svg {
+    height: 0px;
+    position: absolute;
+}
+
+.imerss-legend-preview {
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    border: 1px solid gray;
+}
+
+.imerss-legend-label {
+    display: inline-block;
+    width: 8rem;
+    margin-left: 6px;
+    position: relative;
+    top: 1px;
+}
+
+.imerss-legend-cell-size {
+    align-self: center;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.imerss-legend {
+    width: 10rem;
+    margin-left: auto;
+    margin-right: 10px;
+    background: #555e;
+    pointer-events: all;
+    display: flex;
+    flex-direction: column;
+
+    /* This section taken from R Leaflet's ".info" */
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    /* background: #555; */
+    color: #eee;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    /* Solution from https://stackoverflow.com/a/21335440 */
+    visibility: visible;
+    transition-property: opacity, visibility;
+    transition-duration: 400ms;
+}
+
+.imerss-legend-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Styling for polygon draw */
+
+/* Notion from https://stackoverflow.com/questions/6312067/border-radius-background-color-cropped-border */
+.maplibregl-ctrl-group {
+    overflow: hidden;
+}
+
+.mapbox-gl-draw_ctrl-draw-btn:hover {
+    background-color: #eee;
+}
+
+.mapbox-gl-draw_ctrl-draw-btn.active {
+    background-color: #ccc;
+}
+
+.mapbox-gl-draw_ctrl-draw-btn.active:hover {
+    background-color: #ddd;
+}
+
+.mode-draw_polygon .maplibregl-canvas-container.maplibregl-interactive {
+    cursor: crosshair;
+}
+
+/* Styling for checkboxes with indeterminate value */
+/* Grabbed definition for default "checked" to apply to indeterminate checkboxes */
+.pretty input[indeterminate="true"]~.state label:after {
+    background-color: #bdc3c7!important;
+    transform: scale(.6);
+}
+
+.pretty .state label:after, .pretty .state label:before {
+    width: calc(1em + 0px);
+    height: calc(1em + 0px);
+}
+
+.pretty.p-icon .state .icon {
+    width: calc(1em + 0px);
+    height: calc(1em + 0px);
+}
+
+.pretty {
+    margin-right: 0.3em;
+    /* Cancel the wrapping behaviour at higher checklist level */
+    text-indent: 0;
+}
+
+
+/** This block refers to standalone viz rather than story
+ */
+
+.imerss-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0; /* Essential otherwise it overflows */
+}
+
+.imerss-map-and-taxa {
+    display: flex;
+    /** Old viz do this in a column */
+    flex-direction: row;
+}
+
+.imerss-tabs-and-search {
+    display: flex;
+    flex-direction: column;
+}
+
+.imerss-taxa {
+    display: flex;
+    flex-direction: row;
+    /** Grabbed from Xetthecum's style produced by bootstrap */
+    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+/* Refers to a viz map e.g. gridded rather than story which is .mxcw-map */
+.imerss-map {
+    height: 100%;
+    width: 100%;
+}
+
+
+.imerss-clickable {
+    cursor: pointer;
+}
+
+/** Inside, e.g. taxonDisplay-iNat-extern */
+
+.external-link {
+    width: 1rem;
+    height: 0.9rem;
+    display: inline-block;
+    background-image: url("../img/external-link.svg");
+    background-repeat: no-repeat;
+    background-size: 0.9rem;
+    margin-left: 8px;
+}
+
+.imerss-taxonDisplay {
+    /* height: calc(800px + 6rem); */ /* Viz dimens plus tab height */
+    /* width: 480px; */
+    width: 100%;
+    border: black solid 2px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    min-width: 320px;
+}
+
+/** Give some space but absorb space of empty key */
+.taxonDisplay-value.taxonDisplay-wikipediaSummary {
+    display: block;
+    margin-top: -12px;
+}
+
+.imerss-taxonDisplay p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-indent: -2em;
+    padding-left: 2em
+}
+
+.taxonDisplay-row {
+    padding: 10px 8px 6px 8px;
+    border-bottom: #ccc 2px solid;
+    width: auto;
+    min-width: 320px;
+}
+
+/* unindent nested rows a bit */
+.taxonDisplay-row .taxonDisplay-row {
+    margin-left: -0.5rem;
+}
+
+.taxonDisplay-row.taxonDisplay-expandable-remainder.taxonDisplay-runon-remainder .imerss-media-name {
+    padding-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.taxonDisplay-row .imerss-media-image {
+    padding-bottom: 5px;
+}
+
+.taxonDisplay-row.taxonDisplay-expandable-remainder.taxonDisplay-runon-remainder.taxonDisplay-row {
+    border-bottom: none;
+}
+
+.taxonDisplay-row.taxonDisplay-expandable-remainder.taxonDisplay-runon-remainder .taxonDisplay-row .taxonDisplay-key {
+    margin-left: 1rem;
+}
+
+.taxonDisplay-runon-header.taxonDisplay-expanded {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.taxonDisplay-empty-header {
+    border-bottom: none;
+}
+
+.taxonDisplay-empty-row .taxonDisplay-key {
+    display: none;
+}
+
+.taxonDisplay-key {
+    width: 12em;
+    margin-right: 4px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.taxonDisplay-value {
+    width: 100%;
+}
+
+.taxonDisplay-expand {
+    width: 2rem;
+    background-size: 2rem;
+    height: 1rem;
+    background-image: url("../img/Arrow-down.svg");
+    cursor: pointer;
+    float: right;
+    /* From https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(57%) sepia(0%) saturate(6%) hue-rotate(187deg) brightness(94%) contrast(88%);
+}
+
+.taxonDisplay-unexpanded .taxonDisplay-expand {
+    background-image: url("../img/Arrow-down.svg");
+}
+
+.taxonDisplay-expanded .taxonDisplay-expand {
+    background-image: url("../img/Arrow-up.svg");
+}
+
+.taxonDisplay-runon-remainder.taxonDisplay-unexpanded {
+    display: none
+}
+
+.taxonDisplay-expandable-remainder {
+    padding-left: 20px;
+}
+
+.taxonDisplay-expandable-remainder.taxonDisplay-runon-remainder {
+    padding-left: 8px; /* Back to value in taxonDisplay-row */
+    padding-right: 0; /* Avoid right gap */
+    padding-top: 0;
+}
+
+.taxonDisplay-group > p {
+    display: none;
+}
+
+.taxonDisplay-runon-remainder > .taxonDisplay-key {
+    padding: 0;
+    margin: 0;
+}
+
+.taxonDisplay-image-holder {
+    position: relative;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.taxonDisplay-iNat-extern {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: #ddd;
+    padding: 4px;
+    padding-left: 6px;
+    color: black;
+}
+
+
+.imerss-photo {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.imerss-photo-caption {
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.imerss-tooltip .imerss-photo {
+    width: 165px;
+    height: 125px;
+    min-width: auto;
+}
+
+.imerss-tooltip div.text {
+    max-width: 165px;
+    margin-top: 0.5rem;
+}
+
+
+.imerss-autocomplete {
+    width: 30em;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.imerss-autocomplete-row {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.imerss-autocomplete-row label {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.autocomplete__menu {
+    max-height: 600px;
+}
+
+
+.imerss-filter-panel {
+    padding: 2px 1rem 2px 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.imerss-filter {
+    padding: 2px 0 2px;
+    border-bottom: 1px solid #dbe3e7;
+}
+
+.imerss-filters {
+    height: 100%;
+    width: 20rem;
+    overflow-y: auto;
+    padding-right: 0.5em;
+}
+
+.imerss-filter-controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imerss-reset-filter {
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+.imerss-reset-filter:hover {
+    /* outline: 1px solid gray;*/
+    background: #d0d7de33;
+}
+
+.imerss-record-reporter {
+    padding-top: 2px;
+}
+
+.imerss-filter-title {
+    font-size: smaller;
+}
+
+.imerss-filter-body {
+    padding-left: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.imerss-filter-clear {
+    background-image: url(../img/x-circle-close.svg);
+    background-size: 20px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.imerss-filter-clear.imerss-hidden {
+    display: none;
+}
+
+.imerss-filters .autocomplete__hint, .imerss-filters .autocomplete__input, .imerss-filters .autocomplete__option {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.imerss-filters .autocomplete__input--default {
+    padding: 2px 4px 2px 4px;
+    border-width: 1px;
+    width: 15rem;
+}
+
+.imerss-region-filter-rows {
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+    overflow-y: auto;
+    align-items: end;
+}
+
+.imerss-filter-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+#fli-tab-checklist.ui-tabs-panel, #fli-tab-simple-checklist.ui-tabs-panel {
+    padding: 0;
+}
+
+.imerss-tabs .ui-state-active.ui-tabs-tab {
+    background: #fff;
+}
+
+.imerss-tabs .ui-state-active.ui-tabs-tab a {
+    background: #fff;
+    color: #444;
+}
+
+.imerss-checklist-holder {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    overflow: auto;
+}
+
+/** These "panels" currently only exist in the old-style jQuery tabbed panes. This definition is here to make
+ * Xetthecum phase II panel labels show up in the right place but might be helpful in future.
+ * These two uses of "imerss-panel-label" (in Xetthecum and BBEAS) are unconnected.
+ */
+.imerss-panel {
+    position: relative;
+}
+
+.imerss-panel-label {
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+
+.imerss-copy-checklist {
+    display: inline-block;
+    fill: #636c76;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-top: -5px;
+    /* margin-top: -10px; */
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    top: 3px;
+}
+
+.imerss-copy-checklist-copied {
+    fill: #1a7f37;
+}
+
+.imerss-copy-checklist svg {
+    /** Ripped off from GitHub so positioning is a little wonky **/
+    vertical-align: top;
+}
+
+.imerss-copy-checklist:hover {
+    background: #d0d7de33;
+}
+
+.imerss-checklist {
+    height: 100%;
+    overflow-y: auto;
+    /** Otherwise top checkbox gets clipped */
+    padding-top: 2px;
+}
+
+.imerss-checklist p {
+    display: inline;
+    padding: 1px;
+}
+
+.imerss-checklist p:hover {
+    background: #dde;
+}
+
+.checklist-selected {
+    outline: 2px solid black;
+}
+
+.pretty.p-icon.checklist-fold-control .state .icon {
+    font-size: 1.5em;
+    top: -0.18em;
+    left: -0.16em;
+    width: 1em;
+    height: 1em;
+    opacity: 1;
+}
+
+.pretty.checklist-fold-control .state label:before {
+    border: none;
+}
+
+.pretty.checklist-fold-control {
+    margin-right: -0.3em;
+    color: #555;
+}
+
+.pretty.checklist-fold-control.active {
+    cursor: pointer;
+}
+
+.imerss-checklist ul {
+    margin-block-start: 0;
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.imerss-checklist-no-indent ul {
+    padding-inline-start: 0;
+}
+
+li.checklist-row {
+    /** TODO: We put in margin-left: 10px and padding-left: 20px for Xetthecum but this ruins highlighting - figure
+     * out why we did this
+     */
+    padding-left: 30px;
+    text-indent: -30px;
+}
+
+.imerss-checklist > ul {
+    padding: 0;
+}
+
+.imerss-checklist-up {
+    width: 1.5rem;
+    height: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    background-image: url(../img/up-arrow.svg);
+    background-size: cover;
+    margin-bottom: 0.2rem;
+}
+
+.imerss-checklist-up:hover {
+    outline: 1px solid black;
+    outline-offset: 1px;
+}
+
+/* The checklist rank highlighting */
+
+.checklist-rank-life > p {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.checklist-rank-kingdom > p {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.checklist-rank-phylum > p {
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.checklist-rank-class > p {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.0em;
+}
+
+.checklist-rank-subclass > p {
+    text-transform: uppercase;
+    font-size: 1.0em;
+}
+
+.checklist-rank-order > p {
+    text-transform: uppercase;
+    font-size: 1.0em;
+}
+
+.checklist-rank-family > p {
+    text-transform: uppercase;
+    font-size: 1.0em;
+}
+
+.checklist-rank-genus > p {
+    font-size: 1.0em;
+    font-style: italic;
+}
+
+.checklist-rank-species > p {
+    font-size: 1.0em;
+    font-style: italic;
+}
+
+.checklist-annote {
+    font-style: normal
+}
+
+/* AS edict of 25th August 2024 - bold for phylum and kingdom names */
+
+.checklist-rank-phylum > .checklist-scientific-name {
+    font-weight: bold
+}
+
+.checklist-rank-kingdom > .checklist-scientific-name {
+    font-weight: bold
+}
+
+.imerss-checklist-holder .checklist-common-name {
+    font-style: normal
+}:root {
   --imerss-map-width: 800px;
   --imerss-sun-height: 815px;
 }
 
-.fl-imerss-container {
-    display: flex;
-    flex-direction: row;
-}
-
-.fl-imerss-map-and-taxa {
-    display: flex;
-    flex-direction: column;
+.imerss-map-and-taxa {
     margin-right: 0.75rem;
 }
 
-.fl-imerss-tabs-and-search {
+.imerss-map-holder {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    --imerss-stroke-width: 2;
+}
+
+.imerss-map-and-taxa {
+    height: 40%;
+    /* New viz do this in a row */
     flex-direction: column;
 }
 
-.fl-imerss-taxa {
-    display: flex;
-    flex-direction: row;
+/** Sunburst definitions - will go back into core one day when we port it **/
+
+#fli-tab-sunburst {
+    position: relative;
+    user-select: none;
 }
 
-.fld-imerss-segment {
+.imerss-segment {
     stroke: #444;
     stroke-width: 1px;
 }
 
-.fld-imerss-segment.fl-imerss-layoutRoot {
+.imerss-segment.imerss-layoutRoot {
     stroke-width: 3.5px;
 }
 
-.fld-imerss-labelPath {
+.imerss-labelPath {
     fill: none;
     stroke: none;
 }
 
-.flc-imerss-svg {
+.imerss-svg {
     font-size: 40px;
-    max-height: calc(var(--imerss-sun-height) + 2rem);
+    /*    max-height: calc(var(--imerss-sun-height) + 2rem);*/
     margin-top: -1rem;
 }
 
-.fl-imerss-left-column {
-    width: 1024px;
-}
 
-.fl-imerss-right-column {
-    /* Roughly agree with taxon display - 480px plus scroll bar and change */
-    width: calc(480px + 3rem);
-}
 
-.fld-imerss-map {
-    height: 500px;
-    width: var(--imerss-map-width);
-}
-
-.flc-imerss-viz-dimens {
+.imerss-viz-dimens {
     height: var(--imerss-sun-height);
+    /** Overrides width: 480px which is now in core, probably shou */
+    width: auto;
 }
 
-.fl-imerss-panel {
-    position: relative;
-}
 
-.fl-imerss-clickable {
-    cursor: pointer;
-}
-
-.fld-imerss-back {
+.imerss-back {
     border: 2px solid black;
     display: inline;
     padding: 5px 15px 5px 15px;
@@ -778,233 +1427,48 @@ a.ui-button:active,
     user-select: none;
 }
 
-.fld-imerss-back:hover:not([aria-disabled="true"]) {
+.imerss-back:hover:not([aria-disabled="true"]) {
     background: #ccc;
 }
 
-.fld-imerss-back:not([aria-disabled="true"]) {
+.imerss-back:not([aria-disabled="true"]) {
     cursor: pointer;
 }
 
-.fld-imerss-back[aria-disabled="true"] {
+.imerss-back[aria-disabled="true"] {
     opacity: 0.2;
     cursor: default;
 }
 
-.fld-imerss-taxonDisplay {
-    height: calc(800px + 6rem); /* Viz dimens plus tab height */
-    width: 480px;
-    border: black solid 2px;
-    display: flex;
-    overflow-y: scroll;
-    min-width: 320px;
-}
-
-.fld-imerss-taxonDisplay > div {
-    width: 100%
-}
-
-.fl-taxonDisplay-row {
-    padding: 10px 8px 6px 8px;
-    border-bottom: #ccc 2px solid;
-    width: auto;
-    min-width: 320px;
-}
-
-/* unindent nested rows a bit */
-.fl-taxonDisplay-row .fl-taxonDisplay-row {
-    margin-left: -0.5rem;
-}
-
-.fl-taxonDisplay-row.fld-taxonDisplay-expandable-remainder.fl-taxonDisplay-runon-remainder :last-child {
-    margin-bottom: -0.2rem;
-}
-
-/* No idea why we do this, but we need to undo it for fld-imerss-media-name */
-.fl-taxonDisplay-row.fld-taxonDisplay-expandable-remainder.fl-taxonDisplay-runon-remainder :first-child {
-    margin-top: -0.5rem;
-}
-
-.fl-taxonDisplay-row.fld-taxonDisplay-expandable-remainder.fl-taxonDisplay-runon-remainder .fld-imerss-media-name {
-    padding-bottom: 15px;
-    font-size: 1.1rem;
-}
-
-.fl-taxonDisplay-row .fld-imerss-media-image {
-    padding-bottom: 5px;
-}
-
-.fl-taxonDisplay-row.fld-taxonDisplay-expandable-remainder.fl-taxonDisplay-runon-remainder.fl-taxonDisplay-row {
-    border-bottom: none;
-}
-
-.fl-taxonDisplay-row.fld-taxonDisplay-expandable-remainder.fl-taxonDisplay-runon-remainder .fl-taxonDisplay-row .fl-taxonDisplay-key {
-    margin-left: 1rem;
-}
-
-.fl-taxonDisplay-runon-header.fl-taxonDisplay-expanded {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.fl-taxonDisplay-empty-header {
-    border-bottom: none;
-}
-  
-.fl-taxonDisplay-empty-row .fl-taxonDisplay-key {
-    display: none;
-} 
-
-.fl-taxonDisplay-key {
-    width: 12em;
-    margin-right: 4px;
-    font-weight: bold;
-    padding: 2px;
-}
-
-.fl-taxonDisplay-value {
-    width: 100%;
-}
-
-.fl-taxonDisplay-expand {
-    width: 2rem;
-    background-size: 2rem;
-    height: 1rem;
-    background-image: url("../img/Arrow-down.svg");
-    cursor: pointer;
-    float: right;
-    /* From https://codepen.io/sosuke/pen/Pjoqqp */
-    filter: invert(57%) sepia(0%) saturate(6%) hue-rotate(187deg) brightness(94%) contrast(88%);
-}
-
-.fl-taxonDisplay-unexpanded .fl-taxonDisplay-expand {
-    background-image: url("../img/Arrow-down.svg");
-}
-
-.fl-taxonDisplay-expanded .fl-taxonDisplay-expand {
-    background-image: url("../img/Arrow-up.svg");
-}
-
-.fl-taxonDisplay-runon-remainder.fl-taxonDisplay-unexpanded {
-    display: none
-}
-
-.fld-taxonDisplay-expandable-remainder {
-    padding-left: 20px;
-}
-
-.fld-taxonDisplay-expandable-remainder.fl-taxonDisplay-runon-remainder {
-    padding-left: 8px; /* Back to value in fl-taxonDisplay-row */
-    padding-right: 0; /* Avoid right gap */
-}
-
-.fl-taxonDisplay-runon-remainder > .fl-taxonDisplay-key {
-    padding: 0;
-    margin: 0;
-}
-
-.fl-taxonDisplay-image-holder {
-    position: relative;
-    padding-bottom: 8px;
-}
-
-.fl-taxonDisplay-iNat-extern {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    background: #ddd;
-    padding: 4px;
-    padding-left: 6px;
-    color: black;
-}
-
-.fl-external-link {
-    width: 1rem;
-    height: 0.9rem;
-    display: inline-block;
-    background-image: url("../img/external-link.svg");
-    background-repeat: no-repeat;
-    background-size: 0.9rem;
-    margin-left: 8px;
-}
 
 
-.fl-imerss-cultural-values {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.fl-imerss-cultural-value {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 1rem 1rem 1rem;
-}
-
-.fld-imerss-cultural-value-text {
-    font-size: 0.9rem;
-    font-weight: bold;
-    margin-top: 0.2rem;
-}
-
-.fl-imerss-cultural-value-img {
-    width: 108px;
-    height: 108px;
-    background-repeat: no-repeat;
-    background-size: 108px;
-}
-
-.fld-imerss-value-food {
-    background-image: url(../img/Xetthecum/food.svg);
-}
-
-.fld-imerss-value-medicinal {
-    background-image: url(../img/Xetthecum/medicinal.svg);
-}
-
-.fld-imerss-value-spiritual {
-    background-image: url(../img/Xetthecum/spiritual.svg);
-}
-
-.fld-imerss-value-material {
-    background-image: url(../img/Xetthecum/material.svg);
-}
-
-.fld-imerss-value-trade {
-    background-image: url(../img/Xetthecum/trade.svg);
-}
-
-.fld-imerss-value-indicator {
-    background-image: url(../img/Xetthecum/indicator.svg);
-}
-
-.fld-imerss-value-missing {
-    background-image: url(../img/Xetthecum/missing-value.svg);
-}
-
-.fld-imerss-datasets-label {
+.imerss-datasets-label {
     font-size: 1.3rem;
     font-weight: bold;
     padding-left: 2rem;
 }
 
-.fld-imerss-dataset-controls {
+.imerss-dataset-controls {
     display: table;
     padding: 2px;
     font-size: 0.9rem;
 }
 
-.fl-imerss-dataset-taxa {
+.imerss-dataset-taxa {
     min-width: 2rem;
 }
 
-.fld-imerss-dataset-controls td {
+.imerss-dataset-name {
+    vertical-align: middle;
+}
+
+.imerss-dataset-controls td {
     padding-left: 5px;
     padding-right: 5px;
     height: 1.2rem;
 }
 
-.fld-imerss-dataset-legend {
+.imerss-dataset-legend {
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
@@ -1014,40 +1478,35 @@ a.ui-button:active,
     margin: 2px;
 }
 
-.fld-imerss-dataset-checkbox {
+.imerss-dataset-checkbox {
     vertical-align: middle;
     margin: 4px;
 }
 
-.fld-imerss-dataset-footer {
+.imerss-dataset-footer {
     text-align: center;
 }
 
-.fld-imerss-map-holder {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    --imerss-stroke-width: 2;
+
+/** Definitions for old Leaflet maps */
+
+.imerss-highlightBlock {
+    stroke: deepskyblue;
+    stroke-width: 4px;
 }
 
-.fld-imerss-dataset-name {
-    vertical-align: middle;
-}
-
-.fld-imerss-map-grid {
+.imerss-map-grid {
     z-index: 750;
 }
 
-.fld-imerss-map-region {
+.imerss-map-region {
     stroke-width: var(--imerss-stroke-width);
     stroke: black;
     stroke-opacity: 1;
     fill-opacity: 1;
 }
 
-.fld-imerss-map-tooltip {
+.imerss-map-tooltip {
     z-index: 800;
     position: absolute;
     top: 20px;
@@ -1058,187 +1517,59 @@ a.ui-button:active,
     border: 1px solid black;
 }
 
-.fl-imerss-highlightBlock {
-    stroke: deepskyblue;
-    stroke-width: 4px;
-}
-
-.fl-imerss-selected-region {
-    fill-opacity: 1;
-}
-
-.fl-imerss-unselected-region {
-    fill-opacity: 0.25;
-}
-
-.fld-imerss-map-tooltip tr:nth-child(even) {
+.imerss-map-tooltip tr:nth-child(even) {
     background: #eee;
 }
 
-.fld-imerss-map-tooltip tr:nth-child(odd) {
+.imerss-map-tooltip tr:nth-child(odd) {
     background: #fff;
 }
 
-.fld-imerss-map-tooltip table {
+.imerss-map-tooltip table {
     border-collapse: collapse;
 }
 
-.fl-imerss-photo {
-    width: auto;
-    min-width: 320px;
-    height: 400px;
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat;
+
+.imerss-selected-region {
+    fill-opacity: 1;
 }
 
-.fl-imerss-tooltip .fl-imerss-photo {
-    width: 165px;
-    height: 125px;
-    min-width: auto;
+.imerss-unselected-region {
+    fill-opacity: 0.25;
 }
 
-.fl-imerss-tooltip div.fl-text {
-    max-width: 165px;
-    margin-top: 0.5rem;
-}
 
-.fld-imerss-autocomplete {
-    width: 30em;
-    margin-left: 1rem;
-    display: inline-block;
-}
-
-.flc-imerss-autocomplete-row {
-    text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-
-.flc-imerss-autocomplete-row label {
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.autocomplete__menu {
-    max-height: 600px;
-}
-
-#fli-tab-checklist.ui-tabs-panel, #fli-tab-simple-checklist.ui-tabs-panel {
-    padding: 0;
-}
-
-.fld-imerss-tabs .ui-state-active.ui-tabs-tab {
-    background: #fff;
-}
-
-.fld-imerss-tabs .ui-state-active.ui-tabs-tab a {
-    background: #fff;
-    color: #444;
-}
-
-.fl-imerss-checklist-holder {
+.imerss-checklist-holder {
     overflow-y: scroll;
-    padding: 1em 1.4em;
+    padding: 0 0.5em 0.5em 0.5em;
+    margin: 0.5em 0;
 }
 
-#fli-tab-sunburst {
-    position: relative;
-    user-select: none;
+/** Core has overflow-y: auto, we do scrolling at holder level together with viz-dimens */
+.imerss-checklist {
+    overflow-y: revert;
 }
 
-.fld-imerss-checklist p {
-    display: inline;
-    padding: 1px;
+.imerss-left-column {
+    width: 1024px;
 }
 
-.fld-imerss-checklist p:hover {
-    background: #dde;
+/* This one from pepiowelh.css, unsets hard width in old core */
+/* Where do we want this? Doesn't seem desirable in any "old" viz and not used in "new" */
+/*
+.imerss-left-column {
+    flex: 1 1 0;
+    width: 30%
+}
+*/
+.imerss-right-column {
+    /* Roughly agree with taxon display - 480px plus scroll bar and change */
+    width: calc(480px + 3rem);
 }
 
-.fl-checklist-selected {
-    outline: 2px solid black;
-}
 
-.fld-imerss-checklist ul {
-    margin-block-start: 0;
-    list-style-type: none;
-}
+/** Deal with weird markup from old taxon display which has extra div */
 
-.fl-imerss-checklist-no-indent ul {
-    padding-inline-start: 0;
-}
-
-.fl-imerss-checklist-no-indent .flc-checklist-rank-species {
-    padding-left: 40px;
-}
-
-.fld-imerss-checklist > ul {
-    padding: 0;
-}
-
-.fld-imerss-checklist-up {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-image: url(../img/up-arrow.svg);
-    background-size: cover;
-    margin-left: -0.5rem;
-    margin-bottom: 0.2rem;
-}
-
-.fld-imerss-checklist-up:hover {
-    outline: 1px solid black;
-    outline-offset: 1px;
-}
-
-/* The checklist rank highlighting */
-
-.flc-checklist-rank-life {
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
-.flc-checklist-rank-kingdom {
-    text-transform: uppercase;
-    font-size: 1.2em;
-}
-
-.flc-checklist-rank-phylum {
-    text-transform: uppercase;
-    font-size: 1.1em;
-}
-
-.flc-checklist-rank-class {
-    text-transform: uppercase;
-    font-style: italic;
-    font-size: 1.0em;
-}
-
-.flc-checklist-rank-subclass {
-    text-transform: uppercase;
-    font-size: 1.0em;
-}
-
-.flc-checklist-rank-order {
-    text-transform: uppercase;
-    font-size: 1.0em;
-}
-
-.flc-checklist-rank-family {
-    text-transform: uppercase;
-    font-size: 1.0em;
-}
-
-.flc-checklist-rank-genus {
-    font-size: 1.0em;
-    font-style: italic;
-}
-
-.flc-checklist-rank-species {
-    font-size: 1.0em;
-    font-style: italic;
-}
-
-.flc-checklist-annote {
-    font-style: normal
-}
+.imerss-taxonDisplay > div {
+    width: 100%;
+}.autocomplete__wrapper{position:relative}.autocomplete__hint,.autocomplete__input{-webkit-appearance:none;border:2px solid #0b0c0c;border-radius:0;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;margin-bottom:0;width:100%}.autocomplete__input{background-color:transparent;position:relative}.autocomplete__hint{color:#b1b4b6;position:absolute}.autocomplete__input--default{padding:5px}.autocomplete__input--focused{outline:3px solid #fd0;outline-offset:0;box-shadow:inset 0 0 0 2px}.autocomplete__input--show-all-values{padding:5px 34px 5px 5px;cursor:pointer}.autocomplete__dropdown-arrow-down{z-index:-1;display:inline-block;position:absolute;right:8px;width:24px;height:24px;top:10px}.autocomplete__menu{background-color:#fff;border:2px solid #0b0c0c;border-top:0;color:#0b0c0c;margin:0;max-height:342px;overflow-x:hidden;padding:0;width:100%;width:calc(100% - 4px)}.autocomplete__menu--visible{display:block}.autocomplete__menu--hidden{display:none}.autocomplete__menu--overlay{box-shadow:rgba(0,0,0,.256863) 0 2px 6px;left:0;position:absolute;top:100%;z-index:100}.autocomplete__menu--inline{position:relative}.autocomplete__option{border-bottom:solid #b1b4b6;border-width:1px 0;cursor:pointer;display:block;position:relative}.autocomplete__option>*{pointer-events:none}.autocomplete__option:first-of-type{border-top-width:0}.autocomplete__option:last-of-type{border-bottom-width:0}.autocomplete__option--odd{background-color:#fafafa}.autocomplete__option--focused,.autocomplete__option:hover{background-color:#1d70b8;border-color:#1d70b8;color:#fff;outline:0}@media (-ms-high-contrast:active),(forced-colors:active){.autocomplete__menu{border-color:FieldText}.autocomplete__option{background-color:Field;color:FieldText}.autocomplete__option--focused,.autocomplete__option:hover{forced-color-adjust:none;background-color:SelectedItem;border-color:SelectedItem;color:SelectedItemText;outline-color:SelectedItemText}}.autocomplete__option--no-results{background-color:#fafafa;color:#646b6f;cursor:not-allowed}.autocomplete__hint,.autocomplete__input,.autocomplete__option{font-size:16px;line-height:1.25}.autocomplete__hint,.autocomplete__option{padding:5px}@media (min-width:641px){.autocomplete__hint,.autocomplete__input,.autocomplete__option{font-size:19px;line-height:1.31579}}

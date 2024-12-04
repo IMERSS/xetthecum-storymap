@@ -13,22 +13,30 @@ website:
       - section: Home
         href: index.qmd
         contents:
-          - text: About the Project
-            href: about.qmd
-          - text: Meet the Team
-            href: team.qmd
-          - text: Research
-            href: research.qmd
-          - section: Browse all Species
-            href: taxa.qmd
-            contents: "taxa/*/index.qmd"
-          - text: Web of Life
-            href: web-of-life.qmd
-          - text: Cultural Values
-            href: cultural-values.qmd
-          - text: Ecological Communities
-            href: ecological-values.qmd
-          - text: Resources
+          - section: About
+            contents:
+              - text: About the Project
+                href: about.qmd
+              - text: Meet the Team
+                href: team.qmd
+              - text: Research
+                href: research.qmd
+          - section: Explore
+            contents:
+              - section: Browse all Species
+                href: taxa.qmd
+                contents: "taxa/*/index.qmd"
+              - text: Web of Life
+                href: web-of-life.qmd
+              - text: Cultural Values
+                href: cultural-values.qmd
+              - text: Ecological Communities
+                href: ecological-values.qmd
+              - text: Storymap Designs
+                href: storymap-designs.qmd
+              - text: Related Projects
+                href: files/inspiring_projects.html
+          - section: Resources
             href: resources.qmd
   navbar:
     right:
@@ -54,6 +62,8 @@ website:
             href: ecological-values.qmd
           - text: Storymap Designs
             href: storymap-designs.qmd
+          - text: Related Projects
+            href: files/inspiring_projects.html
           #- text: Downloads
           #  href: data.qmd
       - href: resources.qmd

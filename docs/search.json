@@ -904,107 +904,29 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
+    "objectID": "related-projects.html",
+    "href": "related-projects.html",
+    "title": "Related Projects",
     "section": "",
-    "text": "Your browser does not support the audio tag;  for browser support, please see:  https://www.w3schools.com/tags/tag_audio.asp\nThis website is the culmination of a cross-cultural, interdisciplinary project that aims to meaningfully braid together Indigenous ways of knowing and ecological science to create an ecocultural map of a region known as Xetthecum in the Hul’q’umi’num’ language (Retreat Cove in English), on Galiano Island, BC, Canada. We hope you enjoy exploring this site where you can learn about the local biodiversity, Hul’q’umi’num’ species names, the cultural values of various species and ecological communities, and more.",
-    "crumbs": [
-      "The Story of Xetthecum",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#land-acknowledgement",
-    "href": "index.html#land-acknowledgement",
-    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
-    "section": "Land Acknowledgement",
-    "text": "Land Acknowledgement",
-    "crumbs": [
-      "The Story of Xetthecum",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#xetthecum-digital-ecocultural-mapping-project",
-    "href": "index.html#xetthecum-digital-ecocultural-mapping-project",
-    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
-    "section": "Xetthecum Digital Ecocultural Mapping Project",
-    "text": "Xetthecum Digital Ecocultural Mapping Project",
-    "crumbs": [
-      "The Story of Xetthecum",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "index.html#community-contributions",
-    "href": "index.html#community-contributions",
-    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
-    "section": "Community Contributions",
-    "text": "Community Contributions\nMany community members have contributed to the creation of this story map and continue to collaborate on the project. We welcome your contributions, too! If you have a perspective you’d like to share, please reach out. You can also share your observations of Xetthecum’s biodiversity on iNaturalist.\nMake an observation (iNaturalist)",
-    "crumbs": [
-      "The Story of Xetthecum",
-      "Home"
-    ]
-  },
-  {
-    "objectID": "data.html",
-    "href": "data.html",
-    "title": "Data Download",
-    "section": "",
-    "text": "Data collected as part of the ecocultural mapping project is available here. We have curated a heterogenious mix of different data types, which is bundled as versioned releases using Zenodo.\nDetails on how this data was prepared can be found in the IMERSS bioinformatics github repository"
-  },
-  {
-    "objectID": "data.html#current-release-v0.0",
-    "href": "data.html#current-release-v0.0",
-    "title": "Data Download",
-    "section": "Current Release: V0.0",
-    "text": "Current Release: V0.0"
-  },
-  {
-    "objectID": "data.html#v0.0",
-    "href": "data.html#v0.0",
-    "title": "Data Download",
-    "section": "V0.0",
-    "text": "V0.0\nA placeholder for when the data release is ready.\nThis release contains two notable subsets:\n\nEcological data subset \nCultural data subset"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About the Project",
-    "section": "",
-    "text": "The Xetthecum story map is based on an open source ecocultural mapping framework designed to serve the initiatives of the Indigenous-led organization Whiteswan Environmental (WE). The aim of this collaborative work is to restore traditional Indigenous practices and access to place, supporting thriving cultures and coastal ecosystems for future generations in the Salish Sea. WE initiated the Spirit of the Sxwo’le (SOS) Coalition, which guides its collaboration with the Institute for Multidisciplinary Ecological Research in the Salish Sea (IMERSS) and other non-Indigenous organizations, ensuring that work proceeds with respect for Indigenous leadership and protocols of cultural sensitivity and cultural humility. To learn more about the project and collaboration with Whiteswan Environmental please watch the YouTube video Ecocultural Mapping in the Salish Sea.\nXetthecum (Retreat Cove, Galiano Island) was chosen for our pilot project because there was already a fair amount of existing information regarding the area’s biodiversity and cultural history. These existing resources included historical and contemporary biodiversity data, terrestrial ecosystem mapping, video storytelling, and published ecocultural resources, as well as knowledge shared by Penelakut elder, Thiyuas (Florence James). We supplemented this information by adapting documentation from past participatory mapping of Galiano Island’s ecological communities, and deepened our knowledge of the cultural significance of Xetthecum and its biodiversity in conversation with Indigenous community members, including Augie Sylvester, Thiyuas, Austin Baines, Jeannine Georgeson, Rosemary Georgeson, Mally Joe, Lorne Silvey, Augie Sylvester Jr., Bernie Sylvester, Fred Wilson, Levi Wilson, Roo Wilson, and Wave Wilson.\nThe Xetthecum story map includes cultural information about places, species, and ecological communities, though it does not explicitly reference sacred Indigenous knowledge. We present iconographic representations of cultural values for the species we learned about, only adding details about cultural uses where community members openly shared their knowledge in interviews. As a pilot project, we hope that this story map can become the starting point for more conversations, as we continue to learn from elders and other Indigenous members of the community. In creating this open source story mapping framework, we also aspired to set an example for ecocultural mapping as a professional conservation practice among the next generation of land stewards. We envision these practices flourishing in the future, fostering intergenerational, cross-cultural, multidisciplinary, and transboundary skill-sharing and knowledge exchange.",
-    "crumbs": [
-      "The Story of Xetthecum",
-      "Home",
-      "About",
-      "About the Project"
-    ]
-  },
-  {
-    "objectID": "about.html#sponsors-and-project-partners",
-    "href": "about.html#sponsors-and-project-partners",
-    "title": "About the Project",
-    "section": "Sponsors and Project Partners",
-    "text": "Sponsors and Project Partners\nWhiteswan Environmental\nAccess to Media Education Society\nCapital Regional District\nCommunity Engagement Fellows\nGaliano Conservancy Association\nGaliano Naturalists\nHealthy Watersheds Initiative\nHunterston Farm, Galiano Island\nInclusive Design Research Centre\nIndigenous Watersheds Initiative\nIslands Trust Council\nMakeWay\nMIT Indigenous Communities Fellowship\nSocial Sciences and Humanities Research Council\nSouthern Gulf Islands Community Resource Centre\nNortheast Pacific Coastal Biodiversity Action Network\nUBC BRITE Internship Program",
-    "crumbs": [
-      "The Story of Xetthecum",
-      "Home",
-      "About",
-      "About the Project"
-    ]
-  },
-  {
-    "objectID": "cultural-values.html",
-    "href": "cultural-values.html",
-    "title": "Cultural Values",
-    "section": "",
-    "text": "The species presented here have all been observed at Xetthecum on Galiano Island. Each has specific and varied cultural values for the Hul’q’umi’num’ speaking peoples. These cultural values may include one or more of Food, Indicator, Medicine, Material, Trade or Spiritual.\nIndigenous elders hold important sacred and spiritual knowledge regarding certain plants, animals and ceremonies of their people. This knowledge has not been included on this website, but will be passed down only to those with the rights and training to be able to receive it and use it safely and appropriately.\nThe cultural values of each species observed at Xetthecum are indicated using the icons described below. We share these values as iconography adapted from several sources. Listing the cultural values in this way allows those using the site to learn about the cultural significance of species, while respecting the sensitive nature of such information by refraining from making it explicit. Where we have shared knowledge in greater detail, we have done so only as openly shared by project contributors.\n\n\n\n\n\nxpey’ – western red cedar\n\n\n\n\n\n\nCultural Value: Food\n\n\nThese species are an important food source. Example: the’wun - coho salmon\n\n\n\n\nthe’wun – coho salmon\n\n\n\n\nCultural Value: Material\n\n\nThese species are used in the manufacture of items, the capture or harvesting of other species, or used as something other than as food or medicine. Example: xpey’ – western red cedar was used to build canoes; an 800 year old cedar could be used to make four canoes.\n\n\n\n\nxpey’ – western red cedar\n\n\n\n\nCultural Value: Indicator\n\n\nThe presence of these species indicates something, whether it be the presence of other species, a forecast (e.g. weather) or an event of spiritual significance. Example: the ripening of lila’ – salmonberries indicates the return of Swainson’s Thrush in spring.\n\n\n\n\nlila’ – salmonberry\n\n\n\n\nCultural Value: Trade\n\n\nThese species were traded for other items. Example: skw’lhey – little neck clams (and other types of clams) were used to trade for other items.\n\n\n\n\nskw’lhey – little neck clam\n\n\n\n\nCultural Value: Medicine\n\nThese species or portions of them are used as medicine. Example: q’ey’xulhp – cascara\n\n\n\nq’ey’xulhp – cascara\n\n\n\n\nCultural Value: Spiritual\n\n\nThese species are a part of spiritual ceremony or hold spiritual meaning and significance. Example: yuxwule’ – bald eagle\n\n\n\n\nyuxwule’ – bald eagle",
+    "text": "Please explore the projects that have inspired or are connected to the Xetthecum Digital Ecocultural Mapping project in some way.\n\n\n\n\nWalk Quietly\n\n\n\n\n\nThe Water We Call Home\n\n\n\n\n\n’Imush Q’uyatl’un\n\n\n\n\n\nLindsey Wilson - This is my Sacred Place\n\n\n\n\n\nWhiteswan Environmental\n\n\n\n\n\nGaliano Conservancy, One Island One Earth\n\n\n\n\n\nIslands in the Salish Sea",
     "crumbs": [
       "The Story of Xetthecum",
       "Home",
       "Explore",
-      "Cultural Values"
+      "Related Projects"
+    ]
+  },
+  {
+    "objectID": "related-projects.html#inspiring-projects-related-projects",
+    "href": "related-projects.html#inspiring-projects-related-projects",
+    "title": "Related Projects",
+    "section": "",
+    "text": "Please explore the projects that have inspired or are connected to the Xetthecum Digital Ecocultural Mapping project in some way.\n\n\n\n\nWalk Quietly\n\n\n\n\n\nThe Water We Call Home\n\n\n\n\n\n’Imush Q’uyatl’un\n\n\n\n\n\nLindsey Wilson - This is my Sacred Place\n\n\n\n\n\nWhiteswan Environmental\n\n\n\n\n\nGaliano Conservancy, One Island One Earth\n\n\n\n\n\nIslands in the Salish Sea",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home",
+      "Explore",
+      "Related Projects"
     ]
   },
   {
@@ -1070,6 +992,110 @@
       "Home",
       "Explore",
       "Ecological Communities"
+    ]
+  },
+  {
+    "objectID": "cultural-values.html",
+    "href": "cultural-values.html",
+    "title": "Cultural Values",
+    "section": "",
+    "text": "The species presented here have all been observed at Xetthecum on Galiano Island. Each has specific and varied cultural values for the Hul’q’umi’num’ speaking peoples. These cultural values may include one or more of Food, Indicator, Medicine, Material, Trade or Spiritual.\nIndigenous elders hold important sacred and spiritual knowledge regarding certain plants, animals and ceremonies of their people. This knowledge has not been included on this website, but will be passed down only to those with the rights and training to be able to receive it and use it safely and appropriately.\nThe cultural values of each species observed at Xetthecum are indicated using the icons described below. We share these values as iconography adapted from several sources. Listing the cultural values in this way allows those using the site to learn about the cultural significance of species, while respecting the sensitive nature of such information by refraining from making it explicit. Where we have shared knowledge in greater detail, we have done so only as openly shared by project contributors.\n\n\n\n\n\nxpey’ – western red cedar\n\n\n\n\n\n\nCultural Value: Food\n\n\nThese species are an important food source. Example: the’wun - coho salmon\n\n\n\n\nthe’wun – coho salmon\n\n\n\n\nCultural Value: Material\n\n\nThese species are used in the manufacture of items, the capture or harvesting of other species, or used as something other than as food or medicine. Example: xpey’ – western red cedar was used to build canoes; an 800 year old cedar could be used to make four canoes.\n\n\n\n\nxpey’ – western red cedar\n\n\n\n\nCultural Value: Indicator\n\n\nThe presence of these species indicates something, whether it be the presence of other species, a forecast (e.g. weather) or an event of spiritual significance. Example: the ripening of lila’ – salmonberries indicates the return of Swainson’s Thrush in spring.\n\n\n\n\nlila’ – salmonberry\n\n\n\n\nCultural Value: Trade\n\n\nThese species were traded for other items. Example: skw’lhey – little neck clams (and other types of clams) were used to trade for other items.\n\n\n\n\nskw’lhey – little neck clam\n\n\n\n\nCultural Value: Medicine\n\nThese species or portions of them are used as medicine. Example: q’ey’xulhp – cascara\n\n\n\nq’ey’xulhp – cascara\n\n\n\n\nCultural Value: Spiritual\n\n\nThese species are a part of spiritual ceremony or hold spiritual meaning and significance. Example: yuxwule’ – bald eagle\n\n\n\n\nyuxwule’ – bald eagle",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home",
+      "Explore",
+      "Cultural Values"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the Project",
+    "section": "",
+    "text": "The Xetthecum story map is based on an open source ecocultural mapping framework designed to serve the initiatives of the Indigenous-led organization Whiteswan Environmental (WE). The aim of this collaborative work is to restore traditional Indigenous practices and access to place, supporting thriving cultures and coastal ecosystems for future generations in the Salish Sea. WE initiated the Spirit of the Sxwo’le (SOS) Coalition, which guides its collaboration with the Institute for Multidisciplinary Ecological Research in the Salish Sea (IMERSS) and other non-Indigenous organizations, ensuring that work proceeds with respect for Indigenous leadership and protocols of cultural sensitivity and cultural humility. To learn more about the project and collaboration with Whiteswan Environmental please watch the YouTube video Ecocultural Mapping in the Salish Sea.\nXetthecum (Retreat Cove, Galiano Island) was chosen for our pilot project because there was already a fair amount of existing information regarding the area’s biodiversity and cultural history. These existing resources included historical and contemporary biodiversity data, terrestrial ecosystem mapping, video storytelling, and published ecocultural resources, as well as knowledge shared by Penelakut elder, Thiyuas (Florence James). We supplemented this information by adapting documentation from past participatory mapping of Galiano Island’s ecological communities, and deepened our knowledge of the cultural significance of Xetthecum and its biodiversity in conversation with Indigenous community members, including Augie Sylvester, Thiyuas, Austin Baines, Jeannine Georgeson, Rosemary Georgeson, Mally Joe, Lorne Silvey, Augie Sylvester Jr., Bernie Sylvester, Fred Wilson, Levi Wilson, Roo Wilson, and Wave Wilson.\nThe Xetthecum story map includes cultural information about places, species, and ecological communities, though it does not explicitly reference sacred Indigenous knowledge. We present iconographic representations of cultural values for the species we learned about, only adding details about cultural uses where community members openly shared their knowledge in interviews. As a pilot project, we hope that this story map can become the starting point for more conversations, as we continue to learn from elders and other Indigenous members of the community. In creating this open source story mapping framework, we also aspired to set an example for ecocultural mapping as a professional conservation practice among the next generation of land stewards. We envision these practices flourishing in the future, fostering intergenerational, cross-cultural, multidisciplinary, and transboundary skill-sharing and knowledge exchange.",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home",
+      "About",
+      "About the Project"
+    ]
+  },
+  {
+    "objectID": "about.html#sponsors-and-project-partners",
+    "href": "about.html#sponsors-and-project-partners",
+    "title": "About the Project",
+    "section": "Sponsors and Project Partners",
+    "text": "Sponsors and Project Partners\nWhiteswan Environmental\nAccess to Media Education Society\nCapital Regional District\nCommunity Engagement Fellows\nGaliano Conservancy Association\nGaliano Naturalists\nHealthy Watersheds Initiative\nHunterston Farm, Galiano Island\nInclusive Design Research Centre\nIndigenous Watersheds Initiative\nIslands Trust Council\nMakeWay\nMIT Indigenous Communities Fellowship\nSocial Sciences and Humanities Research Council\nSouthern Gulf Islands Community Resource Centre\nNortheast Pacific Coastal Biodiversity Action Network\nUBC BRITE Internship Program",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home",
+      "About",
+      "About the Project"
+    ]
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data Download",
+    "section": "",
+    "text": "Data collected as part of the ecocultural mapping project is available here. We have curated a heterogenious mix of different data types, which is bundled as versioned releases using Zenodo.\nDetails on how this data was prepared can be found in the IMERSS bioinformatics github repository"
+  },
+  {
+    "objectID": "data.html#current-release-v0.0",
+    "href": "data.html#current-release-v0.0",
+    "title": "Data Download",
+    "section": "Current Release: V0.0",
+    "text": "Current Release: V0.0"
+  },
+  {
+    "objectID": "data.html#v0.0",
+    "href": "data.html#v0.0",
+    "title": "Data Download",
+    "section": "V0.0",
+    "text": "V0.0\nA placeholder for when the data release is ready.\nThis release contains two notable subsets:\n\nEcological data subset \nCultural data subset"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
+    "section": "",
+    "text": "Your browser does not support the audio tag;  for browser support, please see:  https://www.w3schools.com/tags/tag_audio.asp\nThis website is the culmination of a cross-cultural, interdisciplinary project that aims to meaningfully braid together Indigenous ways of knowing and ecological science to create an ecocultural map of a region known as Xetthecum in the Hul’q’umi’num’ language (Retreat Cove in English), on Galiano Island, BC, Canada. We hope you enjoy exploring this site where you can learn about the local biodiversity, Hul’q’umi’num’ species names, the cultural values of various species and ecological communities, and more.",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#land-acknowledgement",
+    "href": "index.html#land-acknowledgement",
+    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
+    "section": "Land Acknowledgement",
+    "text": "Land Acknowledgement",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#xetthecum-digital-ecocultural-mapping-project",
+    "href": "index.html#xetthecum-digital-ecocultural-mapping-project",
+    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
+    "section": "Xetthecum Digital Ecocultural Mapping Project",
+    "text": "Xetthecum Digital Ecocultural Mapping Project",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#community-contributions",
+    "href": "index.html#community-contributions",
+    "title": "Tth'ihwum m'i 'ewu i' Xetthecum sii’em  Please come here to Xetthecum",
+    "section": "Community Contributions",
+    "text": "Community Contributions\nMany community members have contributed to the creation of this story map and continue to collaborate on the project. We welcome your contributions, too! If you have a perspective you’d like to share, please reach out. You can also share your observations of Xetthecum’s biodiversity on iNaturalist.\nMake an observation (iNaturalist)",
+    "crumbs": [
+      "The Story of Xetthecum",
+      "Home"
     ]
   },
   {

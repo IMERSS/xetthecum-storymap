@@ -35,7 +35,7 @@ website:
               - text: Storymap Designs
                 href: storymap-designs.qmd
               - text: Related Projects
-                href: files/inspiring_projects.html
+                href: related-projects.qmd
           - section: Resources
             href: resources.qmd
   navbar:
@@ -63,7 +63,7 @@ website:
           - text: Storymap Designs
             href: storymap-designs.qmd
           - text: Related Projects
-            href: files/inspiring_projects.html
+            href: related-projects.qmd
           #- text: Downloads
           #  href: data.qmd
       - href: resources.qmd
@@ -77,3 +77,5 @@ format:
     theme: [flatly, css/theme-light.scss]
     css: [css/styles.css, https://use.fontawesome.com/releases/v6.0.0/css/all.css]
     include-in-header: header.html
+    include-after-body:
+      - text: <script src="js/fix-nav.js"></script>

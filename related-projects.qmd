@@ -4,16 +4,7 @@ title: Related Projects
 sidebar: false
 ---
 
-## Inspiring Projects, Related Projects
-
-
 <style>
-body {
-    background-color: #F2FCD6;
-    font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    margin: 5rem;
-    font-size: larger;
-}
 .storymap-tiles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -38,7 +29,7 @@ body {
 
 </style>
 
-Please explore the projects that have inspired or are connected to the Xetthecum Digital Ecocultural Mapping project in some way.
+The following projects have inspired or are in some way connected to the Xetthecum Digital Ecocultural Mapping project.
 
 <div class="storymap-tiles">
  <div class="storymap-tile">

@@ -16,9 +16,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: kwakwatl'shun
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Cancer productus
 

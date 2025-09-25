@@ -20,9 +20,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: ts'alhulhp, q'um'-unulhp
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Acer macrophyllum
 

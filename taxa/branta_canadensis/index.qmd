@@ -20,9 +20,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: exu
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Branta canadensis
 

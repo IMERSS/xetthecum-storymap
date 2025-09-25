@@ -18,9 +18,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: tth'iwuq'
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Sambucus racemosa
 

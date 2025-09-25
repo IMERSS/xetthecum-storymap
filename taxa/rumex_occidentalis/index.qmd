@@ -18,9 +18,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: t'umasu
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Rumex occidentalis
 

@@ -19,9 +19,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: the'wun
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Oncorhynchus kisutch
 

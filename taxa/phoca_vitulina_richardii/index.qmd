@@ -19,9 +19,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: e s-hw
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Phoca vitulina richardii
 

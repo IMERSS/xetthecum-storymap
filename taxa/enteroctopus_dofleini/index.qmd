@@ -20,9 +20,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: sqi'mukw
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Enteroctopus dofleini
 

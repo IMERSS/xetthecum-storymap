@@ -16,9 +16,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: ts’ákw’aʔ
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Lysichiton americanus
 

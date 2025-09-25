@@ -21,9 +21,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: sqwul'ew'
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Castor canadensis
 

@@ -59,7 +59,8 @@ if (render_all) {
   }
   
   make_audio <- function (row) {
-    return (str_glue('<audio controls>\n  <source src="../../{row$audioLink}" type="audio/mpeg">\n</audio>'))
+    return (ifelse(is.na(row$audioLink), "", 
+                   str_glue('<audio controls>\n  <source src="../../{row$audioLink}" type="audio/mpeg">\n</audio>')))
   }
   
   make_community_plot <- function (row, parent, obs) {

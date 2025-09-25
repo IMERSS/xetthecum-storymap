@@ -19,9 +19,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: sh-qulii-qep'nuts
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Goodyera oblongifolia
 

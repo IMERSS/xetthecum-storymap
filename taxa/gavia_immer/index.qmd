@@ -21,9 +21,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: swakwun
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Gavia immer
 

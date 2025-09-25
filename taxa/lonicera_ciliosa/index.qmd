@@ -20,9 +20,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: qit'a'uylhp
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Lonicera ciliosa
 

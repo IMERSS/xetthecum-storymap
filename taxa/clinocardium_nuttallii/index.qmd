@@ -20,9 +20,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: stl'ula'um
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Clinocardium nuttallii
 

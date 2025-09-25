@@ -16,9 +16,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: stł’əәlts’əә́ ləәqw’əәs
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Fritillaria affinis
 

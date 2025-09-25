@@ -16,9 +16,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: məә́ łxəәl’
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Oemleria cerasiformis
 

@@ -16,9 +16,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: xw ə́ m’kw ’eyathən
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Galium aparine
 

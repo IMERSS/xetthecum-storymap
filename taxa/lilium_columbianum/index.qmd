@@ -19,9 +19,7 @@ freeze: auto
 
 **Hul'q'umi'num' Name**: sxamelexwthelh
 
-<audio controls>
-  <source src="../../NA" type="audio/mpeg">
-</audio>
+
 
 **Taxon Name**: Lilium columbianum
 
